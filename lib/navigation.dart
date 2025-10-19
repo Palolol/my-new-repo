@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_app1/Screen/home_screen.dart';
+import 'package:my_app1/Screen/home/home_screen.dart';
 import 'package:my_app1/Screen/notification_screen.dart';
 import 'package:my_app1/notification/notification_service.dart';
 
@@ -36,7 +36,6 @@ class _NavigationExampleState extends State<NavigationExample> {
     final ThemeData theme = Theme.of(context);
     return Scaffold(
       body: screens[currentIndex],
-      appBar: AppBar(title: Text("Navigation")),
       bottomNavigationBar: NavigationBar(
         selectedIndex: currentIndex,
         onDestinationSelected: (value) {
